@@ -1,9 +1,9 @@
 <template>
-    <label :for="name" class="form-body-item">
+    <label :for="name">
       <span class="title">Name</span>
       <input :name="name"  type="text" :value="name" readonly class="input">
     </label>
-  <label :for="name" class="form-body-item">
+  <label :for="name">
     <span class="title">Value</span>
     <input :name="name" type="text" :value="value" class="input">
   </label>
