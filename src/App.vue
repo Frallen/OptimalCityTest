@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="page">
-        <Form></Form>
+      <Form></Form>
     </div>
   </div>
 </template>
@@ -14,8 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  height: 100vh;
 }
 
 </style>

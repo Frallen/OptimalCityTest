@@ -1,19 +1,17 @@
 <template>
+    <label :for="name" class="form-body-item">
+      <span class="title">Name</span>
+      <input :name="name"  type="text" :value="name" readonly class="input">
+    </label>
   <label :for="name" class="form-body-item">
-    <span class="title">{{ name }}</span>
-    <input :name="name" :id="id" type="text" @input="inputValue" class="input">
+    <span class="title">Value</span>
+    <input :name="name" type="text" :value="value" class="input">
   </label>
 </template>
 
 <script setup lang="ts">
 import {dataType} from "../types/global.types";
-
-const {name, value, id} = defineProps<dataType>()
-
-const inputValue = ref<string>(value)
-
-
-
+const {name, value} = defineProps<dataType>()
 </script>
 
 <style scoped lang="less">
